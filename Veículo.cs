@@ -3,7 +3,7 @@ using System;
 class Veiculo {
   string marca;
   int ano;
-  string valor;
+  double valor;
   int KM;
 
   /*
