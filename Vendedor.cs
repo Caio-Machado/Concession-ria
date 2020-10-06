@@ -11,7 +11,7 @@ class Vendedor {
   }
   */
 
-  public static double ReceberSalario (double ValorTotalVendas) {
-    return salario + comissao * TotalVendas;
+  public double ReceberSalario (double ValorTotalVendas) {
+    return salario + comissao * ValorTotalVendas;
   }
 }

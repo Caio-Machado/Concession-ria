@@ -15,12 +15,12 @@ class Veiculo {
   }
   */
 
-  public static void AtualizaValor (int novoAno) {
-    novo_valor = valor - (novoAno - ano) * 2.05;
+  public void AtualizaValor (int novoAno) {
+    double novo_valor = valor - (novoAno - ano) * 2.05;
     valor = novo_valor;
   }
 
-  public static void Relatorio () {
+  public void Relatorio () {
     Console.WriteLine("A marca do carro é {0}.",marca);
     Console.WriteLine("O ano do carro é {0}.", ano);
     Console.WriteLine("O valor do carro é {0}", valor);
