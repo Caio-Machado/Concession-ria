@@ -11,6 +11,23 @@ class Vendedor {
   }
   */
 
+  public void setSalario (double novoSalario) {
+    salario = novoSalario;
+  }
+
+  public void setComissao (double novaComissao) {
+    comissao = novaComissao;
+  }
+
+
+  public double getSalario () {
+    return salario;
+  }
+
+  public double getComissao () {
+    return comissao;
+  }
+
   public double ReceberSalario (double ValorTotalVendas) {
     return salario + comissao * ValorTotalVendas;
   }
