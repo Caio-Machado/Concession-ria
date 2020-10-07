@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System;
 
 class Mostruario {
   Vendedor Representante;
@@ -13,5 +14,13 @@ class Mostruario {
     Carros = new List<Veiculo>();
   }
   
+  public double CalculaValor () {
+    double soma = 0;
 
+    for (int i=0; i<Carros.Count;i++) {
+      soma += Carros[i].getValor();
+    }
+
+    return soma;
+  }
 }

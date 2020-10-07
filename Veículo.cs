@@ -6,6 +6,10 @@ class Veiculo {
   double valor;
   int KM;
 
+  public double getValor() {
+    return valor;
+  }
+
   /*
   public Veiculo () {
     marca = "wolksvagem";
@@ -27,7 +31,7 @@ class Veiculo {
     Console.WriteLine("A Kilometragem do carro é {0}", KM);
   }
 
-  public Veiculo (string m, int a, double v, int km) {
+  public Veiculo (double v, string m, int a, int km) {
     marca = m;
     ano = a;
     valor = v;
