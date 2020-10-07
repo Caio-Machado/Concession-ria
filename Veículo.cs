@@ -26,4 +26,11 @@ class Veiculo {
     Console.WriteLine("O valor do carro é {0}", valor);
     Console.WriteLine("A Kilometragem do carro é {0}", KM);
   }
+
+  public Veiculo (string m, int a, double v, int km) {
+    marca = m;
+    ano = a;
+    valor = v;
+    KM = km;
+  }
 }

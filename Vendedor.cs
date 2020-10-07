@@ -3,6 +3,7 @@ using System;
 class Vendedor {
   double salario;
   double comissao;
+  string nome;
 
   /*
   public Vendedor () {
@@ -19,6 +20,10 @@ class Vendedor {
     comissao = novaComissao;
   }
 
+  public void setNome (string n) {
+    nome = n;
+  }
+
 
   public double getSalario () {
     return salario;
@@ -30,5 +35,11 @@ class Vendedor {
 
   public double ReceberSalario (double ValorTotalVendas) {
     return salario + comissao * ValorTotalVendas;
+  }
+
+  public Vendedor (double s, double c, string n) {
+    salario = s;
+    comissao = c;
+    nome = n;
   }
 }
